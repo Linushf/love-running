@@ -27,7 +27,7 @@ h1, h2 {
     margin-left: 30px;
 }
 
-/* navigation links*/
+/* navigation links */
 
 #menu {
     font-size: 110%;
@@ -57,16 +57,17 @@ h1, h2 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* hero image and cover text*/
+/* hero image and cover text */
 
 #hero-outer {
     height: 600px;
     width: 100%;
     overflow: hidden;
+
     position: relative;
 }
 
-#cover-text, cover-text h2 {
+#cover-text, #cover-text h2 {
     color: #fff;
 }
 
@@ -75,7 +76,7 @@ h1, h2 {
     width: 100%;
     background: url('../images/hero-image.webp') no-repeat center center;
 
-    /*animates zoom effect on loading page */
+    /* animates zoom effect on loading page */
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
@@ -111,7 +112,9 @@ h1, h2 {
     position: absolute;
 }
 
-.club-ethos {
+/* club ethos */
+
+#club-ethos {
     height: 600px;
 }
 
@@ -128,8 +131,8 @@ h1, h2 {
 }
 
 #center-about {
-        width: 33%;
-        margin: 0 auto;
+    width: 33%;
+    margin: 0 auto;
 }
 
 hr {
@@ -204,7 +207,7 @@ hr {
     float: left;
     padding: 30px 0 0 10px;
     text-align: center;
-    border: 2px solid #fff;
+    border: 2px solid white;
     box-sizing: border-box;
 }
 
@@ -247,6 +250,7 @@ footer {
 }
 
 /* Media queries */
+
 /* For larger to medium screens size from 1200px wide and down */
 @media screen and (max-width: 1200px) {
     #club-ethos {
@@ -278,14 +282,37 @@ footer {
     }
 }
 
-/* For medium screens size from 950px wide and down */
-
-@media screen and (max-width 950px) {
+/* For medium screen sizes from 950px wide and down */
+@media screen and (max-width: 950px) {
     #menu {
         clear: left;
         float: left;
         margin-left: 30px;
         margin-bottom: 20px;
         line-height: 25px;
+    }
+
+    #cover-text {
+        left: 0;
+    }
+
+    #club-ethos {
+        width: 90%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    .left-about-heading, .right-about-heading {
+        width: inherit;
+    }
+
+    .left-about-heading h2, .right-about-heading h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-about-heading p, .right-about-heading p {
+        text-align: center;
+        padding: 0 20px;
     }
 }
